@@ -6,6 +6,7 @@ function switchTheme() {
   const tables = document.querySelectorAll('.table')
   const cardColums = document.querySelectorAll(".column")
   const footerText = document.querySelector('.navbar-text')
+  const h1Title = document.getElementById('h1_title')
 
   navbar.classList.remove('navbar-light', 'bg-light')
   navbar.classList.add('navbar-dark', 'bg-dark')
@@ -26,5 +27,8 @@ function switchTheme() {
   footerText.style.paddingLeft = '1700px';
   footerText.style.display = 'block';
   footerText.classList.add('text-white');
+
+  h1Title.innerHTML = "This is the dark theme";
+  h1Title.classList.add("text-white")
 
 }
